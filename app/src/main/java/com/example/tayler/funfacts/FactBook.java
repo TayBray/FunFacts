@@ -3,8 +3,8 @@ package com.example.tayler.funfacts;
 import java.util.Random;
 
 public class FactBook {
-    // Fields (Member Variables) - Properties about the object
-    private String[] mFacts = {
+
+    String[] mFacts = {
             "Ants stretch when they wake up in the morning.",
             "Ostriches can run faster than horses.",
             "Olympic gold medals are actually made mostly of silver.",
@@ -16,10 +16,9 @@ public class FactBook {
             "On average, it takes 66 days to form a new habit.",
             "Mammoths still walked the earth when the Great Pyramid was being built." };
 
-    //Methods - Actions the object can take
+
     public String getFact() {
         String fact = "";
-        // Randomly select a fact
         Random randomGenerator = new Random();
         int randomNumber = randomGenerator.nextInt(mFacts.length);
         fact = mFacts[randomNumber];
